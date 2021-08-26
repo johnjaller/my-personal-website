@@ -1,0 +1,249 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif ;
+}
+
+
+
+.navbar{
+    background-color: #FDEFEF !important;
+    font-weight: 700;
+   font-style: italic;
+/* visibility: hidden; */
+transition: 1s;
+}
+navbar-brand{
+ transition: 1s;
+
+}
+.hero{
+    height: 80vh;
+    background-color: #F4DFD0;
+    position: relative;
+    /* display: flex; */
+
+    /* opacity: 0.5; */
+}
+
+.hero-text{
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    display: none;
+    font-weight: bold;
+transition: 1s;
+
+
+}
+.hero-img{
+    position: absolute;
+   
+    height: 300px;
+    width: auto;
+    display: none;
+}
+#hero-img-1{
+    top: 30%;
+    left: 30%;
+}
+#hero-img-2{
+    top: 45%;
+    height: 200px;
+    left: 12%;
+}
+.portfolio{
+    /* height: 600px; */
+    color: #FDEFEF;
+    background-color: #87A8A4;
+    /* display: flex; */
+}
+.portfolio-text{
+    margin: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.myself{
+    /* height: 80vh; */
+background-color: #F7D59C;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hobbies{
+    background-color: #CEE5D0;
+    text-align: center;
+    
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.album{
+    background-color: #a4a5a5;
+}
+.carousel-img{
+    height: 350px;
+    width: auto;
+}
+.goToTop{
+position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 10%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(90, 185, 103);
+  border-radius: 35px;
+}
+.btn-hero{
+    background-color: #F7D59C;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+}
+.hero-p{
+    position: absolute;
+    left: 65%;
+    top: 70%;
+    display: none;
+}
+h1{
+    font-weight: bold;
+    padding: 60px 20px 0px;
+}
+p{
+    padding: 20px 20px 20px;
+    font-size: 20px;
+}
+h2{
+    padding: 20px 20px 20px;
+}
+.nav-link:hover{
+    background-color: #d6e1a5;
+}
+.portfolio-p{
+    font-size: 25px;
+}
+.overlay{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #87A8A4;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.text-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    }
+.img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-link.active{
+    color:#87A8A4 !important;
+}
+/* .flex-box{
+    width: 25vw;
+} */
+.flex-box:hover .overlay{
+    opacity: 0.9;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.extra-row{
+    /* height: 600px; */
+    /* background-color: #F05F40; */
+    display: none;
+    
+}
+.extra-row-display{
+    /* height: 600px; */
+    /* background-color: #F05F40; */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.portfolio-col:hover{
+border: 2px solid white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact{
+    /* height: 600px; */
+    background-color: #DAD0C2;
+}
+.show-more{
+    width: 150px;
+  justify-content: center;
+  background-color: #DAD0C2;
+}
+.myself-img{
+    height: 150px;
+    width: 150px;
+}
+.social-icon{
+    color: #87A8A4;
+}
+@media screen and (max-width:992px) {
+    .navbar{
+        background-color: #a4a5a5 !important;
+    }
+    .navbar-brand{
+        font-size: 15px;
+        color: #FDEFEF !important;
+
+    }
+    .nav-link{
+        color: #FDEFEF !important;
+    }
+    .nav-link.active{
+        color: #d6e1a5 !important;
+    }
+    .hero{
+        height: auto;
+        display: block;
+  text-align: center;
+    }
+    .hero-text{
+        position: static;
+        
+        font-weight: bold;
+    
+    }
+    .hero-p{
+        position: static;
+    }
+    .portfolio{
+        /* height: 600px; */
+        color: #FDEFEF;
+        background-color: #a4a5a5;
+        text-align: center;
+        /* display: flex; */
+    }
+    .hero-img{
+        flex-direction: unset;
+
+        position: static;
+        display: inline-block;
+    }
+    #hero-img-1{
+        height: 150px;
+    }
+    #hero-img-2{
+        
+        height: 100px;
+        
+    }
+    .btn-hero{
+        position: static;
+        transform: translate(0);
+    }
+}
